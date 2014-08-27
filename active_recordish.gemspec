@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = ActiveRecordish::VERSION
   spec.authors       = ["Taiyo Akashi"]
   spec.email         = ["onibakidd@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{ActiveRecordish is something like ActiveRecord. Assumed usage is using models don't have db relation but have array of instances.}
+  spec.description   = %q{ActiveRecordish is something like ActiveRecord. Assumed usage is using models don't have db relation but have array of instances.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
