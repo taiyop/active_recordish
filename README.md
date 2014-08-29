@@ -1,7 +1,5 @@
 # ActiveRecordish
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -17,8 +15,28 @@ Or install it yourself as:
     $ gem install active_recordish
 
 ## Usage
+```ruby
+require 'active_recordish'
+class Tmp < ActiveRecordish::Base
+  def initialize
+    @name = "me"
+  end
 
-TODO: Write usage instructions here
+  def name= _name
+    @name = _name
+  end
+end
+
+tmp = Tmp.new
+tmp.save
+Tmp.all #=> [tmp]
+
+tmp2 = Tmp.new
+tmp2.name= "you"
+tmp2.save #=> name is "you"
+Tmp.all #=> [tmp, tmp2]
+Tmp.all.count #=> 2
+```
 
 ## Contributing
 
